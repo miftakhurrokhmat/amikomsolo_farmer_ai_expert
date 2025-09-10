@@ -62,16 +62,15 @@
         font-size: 1.75rem; /* lebih besar dari sebelumnya */
         color: #111827;
       }
-
     </style>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-light bg-white">
+      <nav class="navbar navbar-light bg-white shadow-sm">
         <div class="container">
           <a href="/" class="navbar-brand d-flex align-items-center">
-            <img src="{{ url_for('static', filename='images\logo.png') }}" alt="SMART Tani AI" class="logo-img me-2" />
-            <span class="logo-text">AI Expert System</span>
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="SMART Tani AI" class="me-2" style="height:40px;" />
+            <span class="fw-bold text-success">AI Expert System</span>
           </a>
         </div>
       </nav>
@@ -135,36 +134,36 @@
             if (top_k === 1) {
               const d = data.result.details
               resultDiv.innerHTML = `
-                                        <div class="card shadow-sm border-0 mt-3">
-                                          <div class="card-body">
-                                            <h5 class="card-title">
-                                              ${d.nama_penyakit}
-                                              <span class="badge bg-primary ms-2">${(data.result.confidence * 100).toFixed(1)}%</span>
-                                            </h5>
-                                            ${d.alias && d.alias.length ? `<p class="mb-1"><strong>🌍 Nama Lain:</strong> ${d.alias.join(', ')}</p>` : ''}
-                                            <p class="mb-1"><strong>🩺 Gejala:</strong> ${d.gejala || '-'}</p>
-                                            <p class="mb-0"><strong>💡 Rekomendasi:</strong> ${d.rekomendasi}</p>
-                                          </div>
-                                        </div>
-                                      `
+                                              <div class="card shadow-sm border-0 mt-3">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">
+                                                    ${d.nama_penyakit}
+                                                    <span class="badge bg-primary ms-2">${(data.result.confidence * 100).toFixed(1)}%</span>
+                                                  </h5>
+                                                  ${d.alias && d.alias.length ? `<p class="mb-1"><strong>🌍 Nama Lain:</strong> ${d.alias.join(', ')}</p>` : ''}
+                                                  <p class="mb-1"><strong>🩺 Gejala:</strong> ${d.gejala || '-'}</p>
+                                                  <p class="mb-0"><strong>💡 Rekomendasi:</strong> ${d.rekomendasi}</p>
+                                                </div>
+                                              </div>
+                                            `
             } else {
               let html = '<h5 class="mt-3">3 Kemungkinan Teratas:</h5><div class="row mt-2">'
               data.result.top_predictions.forEach((p, i) => {
                 html += `
-                                          <div class="col-12 mb-3">
-                                            <div class="card shadow-sm border-0 h-100">
-                                              <div class="card-body">
-                                                <h5 class="card-title">
-                                                  ${i + 1}. ${p.details.nama_penyakit}
-                                                  <span class="badge bg-primary ms-2">${(p.confidence * 100).toFixed(1)}%</span>
-                                                </h5>
-                                                ${p.details.alias && p.details.alias.length ? `<p class="mb-1"><strong>🌍 Nama Lain:</strong> ${p.details.alias.join(', ')}</p>` : ''}
-                                                <p class="mb-1"><strong>🩺 Gejala:</strong> ${p.details.gejala || '-'}</p>
-                                                <p class="mb-0"><strong>💡 Rekomendasi:</strong> ${p.details.rekomendasi}</p>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        `
+                                                <div class="col-12 mb-3">
+                                                  <div class="card shadow-sm border-0 h-100">
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">
+                                                        ${i + 1}. ${p.details.nama_penyakit}
+                                                        <span class="badge bg-primary ms-2">${(p.confidence * 100).toFixed(1)}%</span>
+                                                      </h5>
+                                                      ${p.details.alias && p.details.alias.length ? `<p class="mb-1"><strong>🌍 Nama Lain:</strong> ${p.details.alias.join(', ')}</p>` : ''}
+                                                      <p class="mb-1"><strong>🩺 Gejala:</strong> ${p.details.gejala || '-'}</p>
+                                                      <p class="mb-0"><strong>💡 Rekomendasi:</strong> ${p.details.rekomendasi}</p>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              `
               })
               html += '</div>'
               resultDiv.innerHTML = html
