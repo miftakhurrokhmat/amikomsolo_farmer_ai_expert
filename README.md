@@ -1,0 +1,1 @@
+# amikomsolo_farmer_ai_expert
