@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "description": "Database penyakit/hama padi",
+    "tensorflow_version": "2.19.0",
+    "language": "id-en-latin"
+  },
+  "diseases": {
+    "Bacterial_Blight_Disease": {
+      "nama_penyakit": "Hawar Daun Bakteri (Kresek/HDB)",
+      "alias": [
+        "Bacterial Blight Disease"
+      ],
+      "nama_latin": "Xanthomonas oryzae pv. oryzae",
+      "gejala": "Lesi basah dari tepi/ujung daun, menguning, pada bibit bisa menyebabkan kresek (layu total).",
+      "rekomendasi": "Gunakan varietas tahan, tanam jajar legowo, sanitasi jerami & gulma, pengairan berselang, hindari pupuk N berlebih, aplikasi bakterisida bila serangan berat.",
+      "sumber": "internal"
+    },
+    "Blast_Disease": {
+      "nama_penyakit": "Penyakit Blas",
+      "alias": [
+        "Blast Disease"
+      ],
+      "nama_latin": "Pyricularia oryzae (Magnaporthe oryzae)",
+      "gejala": "Bercak belah ketupat berwarna abu-abu di tengah dengan tepi coklat; pada leher malai menyebabkan busuk leher.",
+      "rekomendasi": "Gunakan varietas tahan, pemupukan berimbang (hindari N berlebih), sanitasi jerami, semprot fungisida (trisiklazol, isoprotiolan) bila perlu.",
+      "sumber": "internal"
+    },
+    "Brown_Spot_Disease": {
+      "nama_penyakit": "Penyakit Bercak Coklat",
+      "alias": [
+        "Brown Spot Disease"
+      ],
+      "nama_latin": "Bipolaris oryzae",
+      "gejala": "Bercak oval atau bulat coklat gelap dengan pusat abu-abu, bisa muncul di daun, pelepah, gabah.",
+      "rekomendasi": "Perbaiki nutrisi (K, Si), gunakan varietas tahan, sanitasi jerami, drainase baik, agen hayati (Bacillus, Serratia), fungisida mancozeb bila parah.",
+      "sumber": "internal"
+    },
+    "False_Smut_Disease": {
+      "nama_penyakit": "Penyakit Gosong Palsu",
+      "alias": [
+        "False Smut Disease"
+      ],
+      "nama_latin": "Ustilaginoidea virens",
+      "gejala": "Butir gabah berubah menjadi massa spora berwarna hijau kekuningan menyerupai bola beludru.",
+      "rekomendasi": "Gunakan varietas tahan, sanitasi lahan, rotasi tanaman, aplikasi fungisida berbahan triazole bila perlu.",
+      "sumber": "external"
+    },
+    "Healthy_Rice_Leaf": {
+      "nama_penyakit": "Daun Sehat",
+      "alias": [
+        "Healthy Rice Leaf"
+      ],
+      "nama_latin": null,
+      "gejala": "Tidak ada gejala penyakit. Daun tampak hijau normal.",
+      "rekomendasi": "Tidak perlu tindakan pengendalian.",
+      "sumber": "external"
+    },
+    "Narrow_Brown_Spot": {
+      "nama_penyakit": "Bercak Garis Coklat",
+      "alias": [
+        "Narrow Brown Spot"
+      ],
+      "nama_latin": "Cercospora oryzae",
+      "gejala": "Bercak coklat berbentuk garis memanjang pada daun.",
+      "rekomendasi": "Gunakan varietas tahan, sanitasi lahan, pemupukan berimbang, semprot fungisida bila intensitas tinggi.",
+      "sumber": "external"
+    },
+    "Sheath_Blight_Disease": {
+      "nama_penyakit": "Hawar Pelepah",
+      "alias": [
+        "Sheath Blight Disease"
+      ],
+      "nama_latin": "Rhizoctonia solani",
+      "gejala": "Bercak lonjong basah keabu-abaan pada pelepah dekat permukaan air, menyebar ke atas.",
+      "rekomendasi": "Atur jarak tanam, drainase baik, hindari pupuk N berlebihan, gunakan agen hayati (Trichoderma, Bacillus), semprot fungisida bila parah.",
+      "sumber": "internal"
+    },
+    "Tungro_Virus": {
+      "nama_penyakit": "Penyakit Tungro",
+      "alias": [
+        "Tungro Virus"
+      ],
+      "nama_latin": "Rice tungro bacilliform virus (RTBV) & Rice tungro spherical virus (RTSV)",
+      "gejala": "Daun muda menguning-oranye, tanaman kerdil, jumlah anakan sedikit.",
+      "rekomendasi": "Tanam serempak, eradikasi tanaman sakit, kelola populasi wereng, gunakan varietas tahan, aplikasikan insektisida bila populasi tinggi.",
+      "sumber": "internal"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+Flask==2.2.5
+Werkzeug==2.2.3
+Pillow==11.0.0
+numpy==1.26.4
+tensorflow==2.19.0
+keras==3.10.0
+opencv-python==4.10.0.84
+Flask-Limiter==3.5.0
+python-dotenv==1.0.1
